@@ -436,7 +436,7 @@ import DatePicker from '../../compnents/forms/DatePicker';
 import TimePicker from '../../compnents/forms/TimePicker';
 import FileUpload from '../../compnents/forms/FileUpload';
 import TextArea from '../../compnents/forms/TextArea';
-import Dropdown from '../../compnents/forms/Dropdown';
+import DropDown from '../../compnents/forms/DropDown';
 import { createEvent } from '../../services/eventService';
 import useAuth from '../../hooks/useAuth';
 import { Toaster, toast } from 'react-hot-toast';
@@ -596,7 +596,7 @@ const CreateEvent = () => {
           placeholder="Enter event details"
         />
 
-        <Dropdown
+        <DropDown
           label="Category"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
