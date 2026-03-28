@@ -32,7 +32,9 @@
 import axios from 'axios';
 
 // Set your API base URL (from .env or default)
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API = import.meta.env.VITE_BACKEND_URL
+  ? `${import.meta.env.VITE_BACKEND_URL}/api`
+  : 'http://localhost:5000/api';
 
 // Create reusable axios instance
 const axiosInstance = axios.create({
